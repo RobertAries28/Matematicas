@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <img src="imagen/mate.jpg" width="150">
+                <a href="">Clases de matematicas</a>
+            </div>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+
+
+
+        <div class="main">
+            <div class="slides">
+                <img src="imagen/imagen1.webp" width="100%" alt="">
+                <img src="imagen/imagen2.webp" width="100%" alt="">
+                <img src="imagen/imagen3.webp" width="100%" alt="">
+            </div>
+        </div>
+
+
+        <footer>
+            <section class="link">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </section>
+
+            <div class="social">
+                <a href="https://www.facebook.com/robert2895"><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+
+
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.slides.js"></script>
+
+        <script>
+            $(function() {
+                $(".slides").slidesjs({
+                    play: {
+                        active: true,
+                        effect: "slide",
+                        interval: 5000,
+                        auto: true,
+                        swap: true,
+                        pauseOnHover: false,
+                        restartDelay: 2500
+                    }
+                });
+            });
+        </script>
+
+
+    </div>
+</body>
+
+</html>
